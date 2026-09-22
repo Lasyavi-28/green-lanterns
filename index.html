@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>The Ring</title>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="atmo"></div>
+
+<!-- COVER SCENE -->
+<div class="scene visible" id="cover">
+  <div class="topbar">
+    <div class="brand">Lantern Corps Protocol</div>
+    <div class="hint-pill"><b>Move</b> to channel the ring</div>
+  </div>
+  <div class="stage-scroll" id="cover-scroll">
+    <div class="stage" id="cover-stage">
+      <img class="base" id="ring-img" src="assets/ring.png" alt="" />
+      <canvas id="glow-canvas"></canvas>
+      <div class="cover-copy">
+        <p class="eyebrow">The Ring Has Chosen</p>
+        <h1 class="headline">Willpower Given<br/><span>Form &amp; Light</span></h1>
+        <button class="enter-btn" id="enter-btn">Charge the Ring</button>
+        <p class="cover-sub">"In brightest day, in blackest night,No evil shall escape my sight.Let those who worship evil's might,Beware my power—Green Lantern's light!" —</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- REVEAL SCENE -->
+<div class="scene" id="reveal">
+  <div class="topbar">
+    <div class="hint-pill"><b>Move</b> across the panel to reveal the light</div>
+    <button class="pill-btn" id="back-btn">&larr; Back</button>
+  </div>
+  <div class="stage-scroll" id="reveal-scroll">
+    <div class="stage" id="reveal-stage">
+      <canvas id="reveal-canvas"></canvas>
+      <div id="start-hint">
+        <div class="start-pill">Tap to begin<br/><b>then move</b> to bring the color through</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<img id="cursor-follow" src="assets/cursor.png" alt="" />
+
+<audio id="bg-audio" src="assets/theme.mp3" loop preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
